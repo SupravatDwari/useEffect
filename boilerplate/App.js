@@ -5,11 +5,10 @@ export default function App() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    console.log('resource changed')
-
-    return()=>{
-      console.log('return from resource change')
-    }
+    fetch(`https://jsonplaceholder.typicode.com/${resourceType}`)
+      .then(response => response.json())
+      .then(json => setItems(json))
+      .catch(error => console.error(error));
   }, [resourceType]);
 
   const handleButtonClick = (type) => {

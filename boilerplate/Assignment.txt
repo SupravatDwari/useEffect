@@ -1,0 +1,8 @@
+You are provided with a boilerplate code for a React app that uses the JSONPlaceholder API to display posts, users, and comments. Your task is to modify the code and write test cases for the following requirements:
+
+When the user clicks on the "Posts" button, the app should display a list of posts.
+When the user clicks on the "Users" button, the app should display a list of users.
+When the user clicks on the "Comments" button, the app should display a list of comments.
+When the user clicks on any of the buttons, the app should log a message to the console indicating that the resource has changed.
+When the app fetches the data from the API, it should display the data in a human-readable format (e.g. as a table or list).
+When the app encounters an error while fetching the data from the API, it should display an error message to the user.
